@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8"/>
+    <title>Code.md</title>
+
+    <!-- Included CSS Files -->
+    <link rel="stylesheet" href="{% static 'css/foundation.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/normalize.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+</head>
+
+
+<body>
+<header>
+    <div class="row">
+        <div class="twelve columns">
+            <h1 class="hide-for-small"><a href="{% url 'index' %}">Code.md</a></h1>
+        </div>
+    </div>
+</header>
+
+<div class="row">
+    {% block content %}
+    {% endblock %}
+</div>
+
+</body>
+</html>
+
+<!-- This closes the main section wrapping all content -->
+</section>
+
