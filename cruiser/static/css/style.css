@@ -27,6 +27,10 @@ header {
     transition: background-color 0.15s ease-in-out;
 }
 
+.panel {
+    margin-top: 10px;
+}
+
 .wide {
     width: 100%;
 }

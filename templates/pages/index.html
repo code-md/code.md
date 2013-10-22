@@ -3,13 +3,13 @@
 {% block content %}
 
     <div class="large-8 columns">
-        <h3>Înregistrare</h3>
 
-        <!-- Grid Example -->
-        <form>
-            {% csrf_token %}
-            <fieldset>
-                <legend>Date Participant</legend>
+        <div class="panel">
+            <h3>Aplică</h3>
+
+            <!-- Grid Example -->
+            <form>
+                {% csrf_token %}
 
                 <div class="row">
                     <div class="large-12 columns">
@@ -39,9 +39,11 @@
                     </div>
                 </div>
                 <input type="submit" class="button wide" value="Aplică">
-            </fieldset>
-        </form>
+            </form>
+        </div>
     </div>
+
+
 
     <div class="large-4 columns">
         <h4>Despre Hack-o-ween</h4>
