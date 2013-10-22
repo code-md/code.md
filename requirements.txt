@@ -1,3 +1,4 @@
 Django==1.5.4
 argparse==1.2.1
+django-annoying==0.7.7
 wsgiref==0.1.2
