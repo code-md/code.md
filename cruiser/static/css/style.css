@@ -1,5 +1,7 @@
-header {
-    background-color: #1abc9c;
+html, body {
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
 }
 
 .button {
@@ -44,4 +46,8 @@ header {
     margin-top: 0.2em;
     margin-bottom: 0.5em;
     line-height: 1.2125em;
+}
+
+.content {
+    height: 100%;
 }

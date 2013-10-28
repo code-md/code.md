@@ -1,65 +1,76 @@
 {% extends 'base.html' %}
 
 {% block content %}
+    <section class="content" data-scroll-index="0">
+        <div class="large-12 columns content">
+            <h4>Despre Hack-o-ween</h4>
 
-    <div class="large-8 columns">
+            <p>Normally, both your asses would be dead as fucking fried chicken, but you happen to pull this shit while
+                I'm
+                in a transitional period so I don't wanna kill you, I wanna help you. But I can't give you this case, it
+                don't belong to me. Besides, I've already been through too much shit this morning over this case to hand
+                it
+                over to your dumb ass. </p>
 
-        <div class="panel">
-            <h3>Aplică</h3>
+            <p>Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than
+                mine. You don't get sick, I do. That's also clear. But for some reason, you and I react the exact same
+                way
+                to water. We swallow it too fast, we choke. We get some in our lungs, we drown. However unreal it may
+                seem,
+                we are connected, you and I. We're on the same curve, just on opposite ends. </p>
 
-            <!-- Grid Example -->
-            <form>
-                {% csrf_token %}
+            <p>The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of
+                evil
+                men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of
+                darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down
+                upon
+                thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers.
+                And
+                you will know My name is the Lord when I lay My vengeance upon thee. </p>
 
-                <div class="row">
-                    <div class="large-12 columns">
-                        <label>Nume Prenume</label>
-                        <input type="text" placeholder="Ion Columna">
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="large-12 columns">
-                        <label>Instituţia de învăţămînt</label>
-                        <input type="text" placeholder="Universitatea Tehnică a Moldovei">
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="large-12 columns">
-                        <label>Rolul în echipă</label>
-                        <input type="text" placeholder="Developer, Designer, etc.">
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="large-12 columns">
-                        <label>Email</label>
-                        <input type="text" placeholder="ion_columna@gmal.com">
-                    </div>
-                </div>
-                <input type="submit" class="button wide" value="Aplică">
-            </form>
         </div>
-    </div>
+    </section>
 
+    <section class="content" data-scroll-index="1">
+            <div class="large-8 columns content">
 
+                <div class="panel">
+                    <h3>Aplică</h3>
 
-    <div class="large-4 columns">
-        <h4>Despre Hack-o-ween</h4>
+                    <!-- Grid Example -->
+                    <form>
+                        {% csrf_token %}
 
-        <p></p>
+                        <div class="row">
+                            <div class="large-12 columns">
+                                <label>Nume Prenume</label>
+                                <input type="text" placeholder="Ion Columna">
+                            </div>
+                        </div>
 
-        <h4>Un hackathon este: </h4>
+                        <div class="row">
+                            <div class="large-12 columns">
+                                <label>Instituţia de învăţămînt</label>
+                                <input type="text" placeholder="Universitatea Tehnică a Moldovei">
+                            </div>
+                        </div>
 
-        <p>A hackathon (also known as a hack day, hackfest or codefest) is an event in which computer programmers and
-            others involved in software development, including graphic designers, interface designers and project
-            managers, collaborate intensively on software projects. Occasionally, there is a hardware component as
-            well. Hackathons typically last between a day and a week. Some hackathons are intended simply for
-            educational or social purposes, although in many cases the goal is to create usable software. Hackathons
-            tend to have a specific focus, which can include the programming language used, the operating system, an
-            application, an API, or the subject and the demographic group of the programmers. In other cases, there is
-            no restriction on the type of software being created.</p>
+                        <div class="row">
+                            <div class="large-12 columns">
+                                <label>Rolul în echipă</label>
+                                <input type="text" placeholder="Developer, Designer, etc.">
+                            </div>
+                        </div>
 
-    </div>
+                        <div class="row">
+                            <div class="large-12 columns">
+                                <label>Email</label>
+                                <input type="text" placeholder="ion_columna@gmal.com">
+                            </div>
+                        </div>
+                        <input type="submit" class="button wide" value="Aplică">
+                    </form>
+                </div>
+            </div>
+    </section>
 {% endblock %}

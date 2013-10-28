@@ -14,15 +14,28 @@
 
 
 <body>
-<header>
-    <div class="row">
-        <div class="twelve columns">
-            <h1 class="hide-for-small"><a href="{% url 'index' %}">Code.md</a></h1>
-        </div>
-    </div>
+<header class="fixed">
+    <nav class="top-bar">
+        <ul class="title-area">
+            <li class="name">
+                <h1><a href="{% url 'index' %}">Code.md</a></h1>
+            </li>
+            <li class="toggle-topbar menu-icon"><a href="#"><span>Meniu</span></a>
+            </li>
+        </ul>
+        <section class="top-bar-section">
+            <ul class="left">
+                <li class="divider"></li>
+                <li class="active"><a href="#" data-scroll-nav="0">Hackathon</a></li>
+                <li class="divider"></li>
+                <li><a href="#" data-scroll-nav="1">Aplică</a></li>
+                <li class="divider"></li>
+            </ul>
+        </section>
+    </nav>
 </header>
 
-<div class="row">
+<div class="content row main">
     {% block content %}
     {% endblock %}
 </div>
@@ -32,4 +45,25 @@
 
 <!-- This closes the main section wrapping all content -->
 </section>
+
+<script>
+    document.write('<script src={{ STATIC_URL }}js/vendor/'
+            + ('__proto__' in {} ? 'zepto' : 'jquery')
+            + '.js><\/script>');
+</script>
+
+<script src="{% static 'js/vendor/jquery.js' %}"></script>
+<script src="{% static 'js/foundation/foundation.js' %}"></script>
+<script src="{% static 'js/foundation/foundation.topbar.js' %}"></script>
+<script src="{% static 'js/scrollIt.min.js' %}"></script>
+
+<script>
+    $(document).foundation();
+    $(function () {
+        $.scrollIt();
+    });
+
+
+</script>
+
 
