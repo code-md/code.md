@@ -153,6 +153,6 @@ LOGGING = {
 }
 
 try:
-    from .local_settings import *
+    from .local_file import *
 except:
     pass
