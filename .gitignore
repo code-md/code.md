@@ -53,3 +53,6 @@ nosetests.xml
 # http://www.jetbrains.com/pycharm/webhelp/project.html
 .idea
 .iml
+env/
+db/
+codemd/local_file.py
